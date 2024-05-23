@@ -2,17 +2,16 @@
   "name": "happy-Valentine",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "index.js",
   "devDependencies": {
-    "browser-sync": "^2.29.3",
+    "http-server": "^14.1.1",
     "run-script-os": "^1.0.2"
   },
   "scripts": {
-    "prestart": "chmod -R 755 .",
     "start": "run-script-os",
-    "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --no-open",
-    "start:darwin": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --no-open",
-    "start:linux": "browser-sync start --server . --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --port 7777 --no-open",
+    "start:win32": "http-server ./ -p 7777",
+    "start:darwin": "http-server ./ -p 7777",
+    "start:linux": "http-server ./ -p 7777",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,7 +21,7 @@
   "keywords": [
     "Happy",
     "Birthday"
-  ],
+  },
   "author": "Afiur Rahman Fahim",
   "modification": "GovindCodes",
   "license": "MIT",
