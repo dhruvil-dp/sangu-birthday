@@ -10,9 +10,9 @@
   "scripts": {
     "prestart": "chmod -R 755 .",
     "start": "run-script-os",
-    "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"chrome\" --no-open",
+    "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --no-open",
     "start:darwin": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --no-open",
-    "start:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --no-open",
+    "start:linux": "browser-sync start --server . --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --port 7777 --no-open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
