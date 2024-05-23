@@ -2,7 +2,7 @@
   "name": "happy-Valentine",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "run-script-os": "^1.0.2"
