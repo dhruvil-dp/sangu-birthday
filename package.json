@@ -8,6 +8,7 @@
     "run-script-os": "^1.0.2"
   },
   "scripts": {
+    "prestart": "chmod -R 755 .",
     "start": "run-script-os",
     "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"chrome\"",
     "start:darwin": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777",
